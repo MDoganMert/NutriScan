@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  NutriScan
-//
-//  Created by ad soyad on 22.02.2026.
-//
-
 import SwiftUI
 import Combine
 
@@ -12,7 +5,7 @@ class ViewModel: ObservableObject {
     @Published var analysisResult = "Henüz analiz yapılmadı"
     @Published var isLoading = false
     
-    let apiKey = "AIzaSyBZlxsJtJXCQnhf-eHx8Ydd7NZ_g1fmRzM"
+    let apiKey = "YOUR_API_KEY"
     
     func analyzeImage(_ image: UIImage) {
         guard let imageData = image.jpegData(compressionQuality: 0.7) else { return }
